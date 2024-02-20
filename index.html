@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Club</title>
+    <title>JOY PARIBAHAN</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b614021542.js" crossorigin="anonymous"></script>
-     <link rel="icon" href="Images/icon/hockey-icon.png">
+     <link rel="icon" href="Images/bus-icon.png">
      <style>
         .text-font{
             font-family: 'Manrope', sans-serif;
@@ -66,7 +66,7 @@
     <br><br>
 </div>
 <div class="lg:absolute pl-6 pt-3 flex justify-center items-center bottom-48 left-[630px]">
-    <button type="button" class=" w-44 h-16 bg-[#1dd100] font-black text-xl rounded-2xl">Bye Tickets</button>
+    <button type="button" id="scrollBtn" class=" w-44 h-16 bg-[#1dd100] font-black text-xl rounded-2xl">Buy Tickets</button>
 </div>
 </div>
 </header>
@@ -83,13 +83,13 @@
     <div class="card-body">
         <h2 class="card-title text-[#030712] text-opacity-80 text-[40px] font-black leading-9">15% OFF</h2>
         <p class="text-[#030712] text-opacity-80 text-xl font-semibold leading-9">on your next purchase</p>
-        <p class="text-[#030712] text-opacity-80 text-lg font-medium leading-9">use by january 2024</p>
+        <p class="text-[#030712] text-opacity-80 text-lg font-medium leading-9">use by March 2024</p>
     </div>
 <div class="mt-0">
   <img class="" src="images/cupon-devider.png" alt="">
 </div>
 <div>
-    <h3 id="" class="text-[32px] text-[#030712] font-bold  leading-[57.60px] pt-7">NEW15</h3>
+    <h3 id="discount15" class="text-[32px] text-[#030712] font-bold  leading-[57.60px] pt-7">NEW15</h3>
     <P class="text-xl text-[#030712] text-opacity-40 font-medium leading-9">Coupon Code</P>
 </div>
 </div>
@@ -98,13 +98,13 @@
   <div class="card-body">
     <h2 class="card-title text-[#030712] text-opacity-80 text-[40px] font-black leading-9">20% OFF</h2>
     <p class="text-[#030712] text-opacity-80 text-xl font-semibold leading-9">on your next purchase</p>
-    <p class="text-[#030712] text-opacity-80 text-lg font-medium leading-9">use by january 2024</p>
+    <p class="text-[#030712] text-opacity-80 text-lg font-medium leading-9">use by March 2024</p>
 </div>
 <div class="mt-0">
     <img class="" src="images/cupon-devider.png" alt="">
 </div>
     <div class="">
-      <h3 id="" class="text-[32px] text-[#030712] font-bold leading-[57.60px] pt-7">Couple 20</h3>
+      <h3 id="discount20" class="text-[32px] text-[#030712] font-bold leading-[57.60px] pt-7">Couple 20</h3>
       <P class="text-xl text-[#030712] text-opacity-40 font-medium leading-9">Coupon Code</P>
 </div>
 </div>
@@ -117,7 +117,7 @@
         
             
 
-<section class="bg-[#f7f8f8] mx-auto flex-col lg:px-32 py-8">
+<section id="mainSection" class="bg-[#f7f8f8] mx-auto flex-col lg:px-32 py-8">
 
   <div class="container mx-auto lg:px-32 py-8">
 <div>
@@ -134,7 +134,7 @@
       <h3 class="text-[32px] font-bold">JOY Paribahan <span class="block text-[#030712] text-opacity-60 text-lg font-normal ">Coach-009-WEB ! AC_Business</span></h3>
     </div>
     <div>
-      <a class="btn text-[#1DD100] bg-[#1DD100] bg-opacity-20 text-lg font-medium rounded-xl mt-10"><img src="images/bus-icon.png" alt=""><span id="total-seat-quantity">28</span>Seats left</a>
+      <a class="btn text-[#1DD100] bg-[#1DD100] bg-opacity-20 text-lg font-medium rounded-xl mt-10"><img src="images/bus-icon.png" alt=""><span id="totalSeat">28</span>Seats left</a>
     </div>
 </div>
 <!-- =========== -->
@@ -167,7 +167,7 @@
   
     <div class="pt-20">
       <img src="images/fare.png" alt="">
-      <h3 id="ticket-price" class="text-[#030712] text-[32px] font-bold leading-10">550 Taka</h3>
+      <h3 id="ticketPrice" class="text-[#030712] text-[32px] font-bold leading-10">550 Taka</h3>
       <P class="text-[#030712] text-opacity-60 text-2xl font-semibold leading-10">Per Seat</P>
     </div>
   </div>
@@ -200,13 +200,13 @@
           <h3 class="text-[18px] font-medium">A</h3>
         </div>
         <div class="flex gap-5">
-          <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">A1</button>
-          <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">A2</button>
+          <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">A1</button>
+          <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">A2</button>
         </div>
       </div>
       <div class="flex gap-5">
-        <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">A3</button>
-        <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">A4</button>
+        <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">A3</button>
+        <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">A4</button>
  </div>
 </div>
 <!-- row two B -->
@@ -217,13 +217,13 @@
         <h3 class="text-[18px] font-medium">B</h3>
       </div>
       <div class="flex gap-5">
-        <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">B1</button>
-        <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">B2</button>
+        <button class="seat btn  md:px-8 px-4 btn-active ml-2 w-[84px]">B1</button>
+        <button class="seat btn  md:px-8 px-4 btn-active ml-2 w-[84px]">B2</button>
       </div>
     </div>
     <div class="flex gap-5">
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">B3</button>
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">B4</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">B3</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">B4</button>
     </div>
   </div>
    <!-- row c -->
@@ -234,13 +234,13 @@
       <h3 class="text-[18px] font-medium">C</h3>
     </div>
     <div class="flex gap-5">
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">C1</button>
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">C2</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">C1</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">C2</button>
     </div>
   </div>
   <div class="flex gap-5">
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">C3</button>
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">C4</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">C3</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">C4</button>
 </div>
 </div>
 <!-- row-c end -->
@@ -251,13 +251,13 @@
       <h3 class="text-[18px] font-medium">D</h3>
     </div>
     <div class="flex gap-5">
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">D1</button>
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">D2</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">D1</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">D2</button>
     </div>
   </div>
   <div class="flex gap-5">
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">D3</button>
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">D4</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">D3</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">D4</button>
   </div>
 </div>
  <!-- row d end -->
@@ -268,13 +268,13 @@
       <h3 class="text-[18px] font-medium">E</h3>
     </div>
     <div class="flex gap-5">
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">E1</button>
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">E2</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">E1</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">E2</button>
     </div>
   </div>
   <div class="flex gap-5">
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">E3</button>
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">E4</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">E3</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">E4</button>
   </div>
 </div>
 <!-- row-e end -->
@@ -286,13 +286,13 @@
       <h3 class="text-[18px] font-medium">F</h3>
     </div>
     <div class="flex gap-5">
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">F1</button>
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">F2</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">F1</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">F2</button>
     </div>
   </div>
   <div class="flex gap-5">
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">F3</button>
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">F4</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">F3</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">F4</button>
   </div>
 </div>
 <!-- row-f end -->
@@ -303,13 +303,13 @@
       <h3 class="text-[18px] font-medium">G</h3>
     </div>
     <div class="flex gap-5">
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">G1</button>
-      <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">G2</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">G1</button>
+      <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">G2</button>
     </div>
   </div>
   <div class="flex gap-5">
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">G3</button>
-    <button class="sit btn md:px-8 px-4 btn-active ml-2 w-[84px]">G4</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">G3</button>
+    <button class="seat btn md:px-8 px-4 btn-active ml-2 w-[84px]">G4</button>
   </div>
 </div>
 <!-- row-G end -->
@@ -322,26 +322,26 @@
   <div class="bg-slate-100 rounded-xl">
     <div class="p-5">
       <div class="flex justify-between">
-        <p class="font-inter font-medium">Seat <span id="selected-ticket-count" class="text-xs font-['Inter'] p-1 font-bold text-white bg-[#1DD100] rounded-[5px]">0</span></p>
-        <p class="font-inter font-medium">Class <span></span></p>
-        <p class="font-inter font-medium">Price <span></span></p>
+        <p class="font-medium">Seat <span id="selectedSeatCount" class="text-xs p-1 font-bold text-white bg-[#1DD100] rounded-[8px]">0</span></p>
+        <p class="font-medium">Class <span></span></p>
+        <p class="font-medium">Price <span></span></p>
       </div>
-      <div id="selected-ticket">
+      <div id="selectedSeat">
       </div>
       <div class="flex justify-between border-t-2 my-5 border-solid"></div>
       <div class="flex justify-between">
         <p class="text-xl font-semibold">Total Price</p>
-        <p class="text-xl text-black font-semibold"><span id="total-price" class="pr-3">0</span>BDT</p>
+        <p class="text-xl text-black font-semibold"><span id="totalPrice" class="pr-3">0</span>BDT</p>
       </div>
       <div class="join mt-6 w-full pb-5">
-        <input id="input-fild" type="text" placeholder="Have any copupon?"
+        <input id="discountInput" type="text" placeholder="Have any coupon?"
             class="input input-bordered w-[100%] join-item" />
-        <button id="apply-button"
+        <button id="applyBtn"
             class="btn text-white hover:bg-[#1cd10067]  bg-[#1DD100] join-item">Apply</button>
       </div>
       <div class="flex justify-between">
         <p class="text-xl font-semibold">Grand Total</p>
-        <p class="text-xl text-black font-semibold"><span id="grand-total" class="pr-3">0</span>BDT</p>
+        <p class="text-xl text-black font-semibold"><span id="grandTotal" class="pr-3">0</span>BDT</p>
     </div>
     </div>
   </div><br>
@@ -365,64 +365,67 @@
 </div>
 <!-- ********* form end-->
 <div class="pt-5">
-   <button id="next-button" class="btn w-full mt-5 text-white hover:text-black hover:bg-[#1cd10067]  bg-[#1DD100] join-item">Next</button>
+  <button id="nextBtn" class="btn w-full mt-5 text-white hover:text-black hover:bg-[#1cd10067]  bg-[#1DD100]" onclick="my_modal_5.showModal()">Next</button>
   </div>
 </div>
 </div>
 </div>
 
 </section>
+<!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div class="flex flex-col text-center items-center bg-gray-300 p-10 rounded-xl">
+      <img src="images/success.png" alt="">
+      <h1 class="text-green-700 text-2xl font-extrabold py-5">SUCCESS</h1>
+      <P class=" font-bold">Thank you for booking our Bus seats.</P>
+      <P class="font-bold m-2">We are working hard to find the best service and deals for you.</P>
+      <p class="font-medium">Shortly You will find a confirmation in your email.</p>
+      <button id="continue-button" type="btn" class="bg-green-400 my-5 cursor-pointer text-white py-2 px-8 rounded-md text-center">Continue</button>
+    </div>
+  </div>
+</dialog>
 
  <!-- end -->
 </main>
   <!-- footer -->
-  <footer class="containe mx-auto bg-[#131318] my-6">
-  <section class="grid grid-cols-1 lg:grid-cols-5 px-3 lg:px-16">
-
-  <div class="col-span-2 mt-8 text-center lg:text-left">
-      <h3 class="text-2xl font-extrabold text-white mb-7">Get In Touch</h3>
-      <p class="font-medium text-[#89898B] mb-2 lg:w-[346px]">Our initial focus will be on 
-        learning new skills and having fun. We will also emphasize safety and sportsmanship.</p>
-     <p class="m-2"><i class="fa-regular fa-envelope text-[#ff4240] mr-1"></i> <span
-      class="text-[#89898B]">hockeys@support.com</span></p>
-     <p><i class="fa-solid fa-phone text-[#ff4240] mr-1"></i><span class="text-[#89898B]">(+62)
-      123-321-543</span></p>
+  <footer class="bg-[#030712] text-white">
+<div class="mx-5">
+  <div class=" flex justify-between pt-5">
+<div>
+  <h3 class="text-xl md:text-4xl font-extrabold">Joy-Ticket</h3>
+  <P class="pt-5">Joy-Ticket is a digital platform to make your <br>
+        daily commuting better.</P>
 </div>
-
-<div class="mt-8 text-center lg:text-start">
-    <h3 class="text-lg text-white font-bold mb-7">Company</h3>
-    <ul class="text-[#89898B] space-y-2 ">
-        <li>About us</li>
-        <li>Leadership</li>
-        <li>Careers</li>
-        <li>News & Article</li>
-        <li>Legal Notice</li>
+  <div>
+   <h3>Download our app</h3>
+<div class="border border-white rounded-md mt-5">
+  <div class="flex gap-4 p-5">
+    <img src="images/playstore.png" alt="">
+<div>
+  <h3 class="text-sm text-white leading-0">GET IT ON</h3>
+  <h4 class="text-xl text-white font-bold leading-0">Google Play</h4>                
+</div>
+</div>
+</div>
+</div>
+</div>
+  <div class=" border border-dashed mt-5"></div>
+    <div class="flex flex-col gap-5 md:flex-row justify-between pt-10 py-10">
+<div>
+  <p>@all rights reserved, Sadik-Ticket services limited.2024</p>
+</div>
+  <div>
+    <ul class="flex gap-5 ">
+      <li><a href="">Terms & condition</a></li>
+      <li><a href="">Return & refund policy</a></li>
+      <li><a href="">Privacy policy</a></li>
     </ul>
+  </div>
 </div>
-
-<div class="mt-8 lg:text-left pr-10 text-center">
-    <h3 class="text-lg text-white font-bold mb-7">Support</h3>
-    <ul class="text-[#89898B] space-y-2">
-        <li>Help Center</li>
-        <li>FAQ</li>
-        <li>Ticket Support</li>
-        <li>Contact Us</li>
-    </ul>
 </div>
-
-<div class="mt-8 text-center lg:text-left col-span-2 lg:col-span-1">
-    <h3 class="text-lg text-white font-bold mb-7">Services</h3>
-    <ul class="text-[#89898B] space-y-2">
-        <li>Academy</li>
-        <li>Group Lesson</li>
-        <li>Private Lesson</li>
-        <li>Hockeys for kids</li>
-        <li>Hockeys for Adult</li>
-    </ul>
-</div>
-</section>
-  </footer>
+</footer>
    
-
+<script src="main.js"></script>
 </body>
 </html>

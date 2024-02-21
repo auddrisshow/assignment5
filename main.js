@@ -36,7 +36,7 @@ for (const chair of allSeat) {
             classSpan.textContent = busClass;
 
             const priceSpan = document.createElement('span');
-            priceSpan.textContent = price + 'Taka';
+            priceSpan.textContent = price.toFixed(2) + 'Taka';
 
             p.style.display = 'flex';
             p.style.justifyContent = 'space-between';
@@ -55,10 +55,10 @@ for (const chair of allSeat) {
             totalCost += price;
 
             const totalCostArea = document.getElementById('totalPrice');
-            totalCostArea.innerText = totalCost;
+            totalCostArea.innerText = totalCost.toFixed(2);
 
             const grandTotalArea = document.getElementById('grandTotal');
-            grandTotalArea.innerText = totalCost;
+            grandTotalArea.innerText = totalCost.toFixed(2);
 
             let ticketQuantity = ++clickedButtons;
 
@@ -78,7 +78,7 @@ for (const chair of allSeat) {
         }
 
             if (clickedButtons === 4) {
-                alert('YOU CAN BUY 4 TICKETS ONLY AND YOU CROSS YOUR LIMIT');
+                alert('YOU CAN BUY 4 TICKETS ONLY AND YOU CAN NOT CROSS YOUR LIMIT');
                 applyButton.disabled = false;
             }
 
@@ -86,13 +86,13 @@ for (const chair of allSeat) {
                 for ( const seat of allSeat) {
                     if  (!seat.disabled) {
                         seat.disabled = true;
-                    }
-                }
-            }
+                    };
+                };
+            };
 
-        }
-    })
-}
+        };
+    });
+};
 
 document.getElementById('phoneNumber').addEventListener('keyup', function () {
 
@@ -103,4 +103,50 @@ document.getElementById('phoneNumber').addEventListener('keyup', function () {
 else { 
     nextButton.disabled = true;
 }
-})
+});
+
+document.getElementById('applyBtn').addEventListener('click' , function () {
+    const d15 = document.getElementById('discount15');
+    const dis15 = d15.innerText;
+    
+    const d20 = document.getElementById('discount20');
+    const dis20 = d20.innerText;
+
+    const couponValue = document.getElementById('discountInput');
+    const couponText = couponValue.value.trim();
+
+    const areaOfGrandTotal = document.getElementById('grandTotal');
+    const endTotal = parseInt(areaOfGrandTotal.innerText); 
+
+    const discountAmount = document.getElementById('discountPrice')
+
+    let finalPrice = 0;
+
+    if (dis15 === couponText) {
+
+        const discount1 = endTotal * (15 / 100);
+        finalPrice = endTotal - discount1;
+        discountAmount.innerText = discount1.toFixed(2);
+        areaOfGrandTotal.innerText = finalPrice.toFixed(2);
+    }
+    else if (dis20 === couponText) {
+        const discount2 = endTotal * (20 / 100);
+        finalPrice = endTotal - discount2;
+        discountAmount.innerText = discount2.toFixed(2);
+        areaOfGrandTotal.innerText = finalPrice.toFixed(2);
+    }
+    else {
+        alert('Invalid Coupon');
+    }
+    
+
+    const hideCouponArea = document.getElementById('couponArea');
+    if (hideCouponArea) {
+        hideCouponArea.style.display = 'none';
+    }
+    
+
+});
+document.getElementById('continueBtn').addEventListener('click', function () {
+    window.location.reload();
+});

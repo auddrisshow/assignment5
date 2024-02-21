@@ -65,7 +65,7 @@ for (const chair of allSeat) {
             const selectedTicketCount = document.getElementById('selectedSeatCount');
             selectedTicketCount.innerText = ticketQuantity;
 
-            const totalChairQuantity = 28;
+            const totalChairQuantity = 32;
             let result = totalChairQuantity - ticketQuantity;
             const leftOverSeat = document.getElementById('totalSeat');
             leftOverSeat.innerText = result;

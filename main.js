@@ -126,13 +126,13 @@ document.getElementById('applyBtn').addEventListener('click' , function () {
 
         const discount1 = endTotal * (15 / 100);
         finalPrice = endTotal - discount1;
-        discountAmount.innerText = discount1.toFixed(2);
+        discountAmount.innerText = '-' + discount1.toFixed(2);
         areaOfGrandTotal.innerText = finalPrice.toFixed(2);
     }
     else if (dis20 === couponText) {
         const discount2 = endTotal * (20 / 100);
         finalPrice = endTotal - discount2;
-        discountAmount.innerText = discount2.toFixed(2);
+        discountAmount.innerText = '-' + discount2.toFixed(2);
         areaOfGrandTotal.innerText = finalPrice.toFixed(2);
     }
     else {

@@ -16,6 +16,12 @@
             font-family: 'Manrope', sans-serif;
         }
      </style>
+     <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance:none;
+      }
+     </style>
 </head>
 <body class="text-font">
  <header class="bg-[#fff]">
@@ -68,14 +74,48 @@
 <div class="lg:absolute pl-6 pt-3 flex justify-center items-center bottom-48 left-[630px]">
     <button type="button" id="scrollBtn" class=" w-44 h-16 bg-[#1dd100] font-black text-xl rounded-2xl">Buy Tickets</button>
 </div>
+<!-- add new -->
+<div class=" absolute pl-48 ">
+  <div class="banner-temp flex flex-col lg:flex-row gap-6 mt-[20px] lg:mt-[-40px] justify-center">
+    <div
+      class=" bg-white flex items-center justify-center lg:justify-between  py-5 px-6 gap-5 lg:gap-4 rounded-3xl border-b-[5px] border-b-[#1DD100]  border-r-[2px] border-t-[2px]">
+      <img src="images/people.png" alt="">
+      <div class="flex flex-col">
+        <h1 class="text-[36px] font-bold">500K+</h1>
+        <p class="text-[18px] font-normal">Registered Users</p>
+      </div>
+    </div>
+
+    <div
+      class=" bg-white flex items-center justify-center lg:justify-between  py-5 px-6 gap-5 lg:gap-4 rounded-3xl border-b-[5px] border-b-[#1DD100]  border-r-[2px] border-t-[2px]">
+      <img src="images/ticket-cupon.png" alt="">
+      <div class="flex flex-col">
+        <h1 class="text-[36px] font-bold">1.7 lacks</h1>
+        <p class="text-[18px] font-normal">Tickets Sold</p>
+      </div>
+    </div>
+
+    <div
+      class=" bg-white flex items-center justify-center lg:justify-between  py-5 px-6 gap-5 lg:gap-4 rounded-3xl border-b-[5px] border-b-[#1DD100]  border-r-[2px] border-t-[2px]">
+      <img src="images/stoppage.png" alt="">
+      <div class="flex flex-col">
+        <h1 class="text-[36px] font-bold">80K+</h1>
+        <p class="text-[18px] font-normal">Rental Partners</p>
+      </div>
+    </div>
+  </div>
+
 </div>
-</header>
+<!-- end new -->
+
+</div>
+<br><br>
+</header><br><br><br>
+
+<main class="">
 
 
-    <main>
-
-
-<section class="mx-auto lg:flex-col px-32 py-8">
+<section class="mx-auto lg:flex-col px-32 py-8 border-t-[10px] border-[#1dd100] rounded-3xl border-2">
    <h3 class="text-center text-[#030712] text-[40px] font-bold ">Best offers for you</h3><br>
   <div class="mt-4 lg: flex justify-between gap-5">
     <!-- card one -->
@@ -113,11 +153,11 @@
   <button type="button" class="text-[#1DD100] text-xl font-bold border border-[#1DD100] rounded-xl py-5 px-8">See All Offers</button>
 </div>
 
-</section>
+</section><br><br>
         
             
 
-<section id="mainSection" class="bg-[#f7f8f8] mx-auto flex-col lg:px-32 py-8">
+<section id="mainSection" class="bg-[#f7f8f8] mx-auto flex-col lg:px-32 py-8 rounded-tr-3xl rounded-tl-3xl border-[#1dd100] border-4">
 
   <div class="container mx-auto lg:px-32 py-8">
 <div>
@@ -380,7 +420,7 @@
     </div><br>
     <div>
       <label for="phoneNumber">Phone Number*</label><br><br>
-      <input type="tel" id="phoneNumber" class="w-full h-12 rounded-2xl box-content bg-slate-100 font-bold " placeholder="      Enter your Phone Number" name="phoneNumber" required>
+      <input type="number" id="phoneNumber" class="w-full h-12 rounded-2xl box-content bg-slate-100 font-bold " placeholder="      Enter your Phone Number" name="phoneNumber" required>
     </div><br>
     <div>
       <label for="email">Email Address</label><br><br>

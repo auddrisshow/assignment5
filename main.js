@@ -18,7 +18,7 @@ applyButton.disabled = true;
 
 for (const chair of allSeat) {
     chair.addEventListener('click', function () {
-        if (clickedButtons < 4) {
+        if (clickedButtons < 5) {
             const chairNumber = chair.textContent;
 
             const ticketCost = document.getElementById('ticketPrice');
@@ -72,11 +72,12 @@ for (const chair of allSeat) {
 
             
             const input = document.getElementById('phoneNumber').value.length
-            if(input > 0){
-            nextButton.disabled = false;
-
-        }
-
+            
+            if (clickedButtons === 1 && input > 0) {
+                nextButton.disabled = false;
+            }
+            
+        
             if (clickedButtons === 4) {
                 alert('YOU CAN BUY 4 TICKETS ONLY AND YOU CAN NOT CROSS YOUR LIMIT');
                 applyButton.disabled = false;
